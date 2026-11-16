@@ -45,7 +45,7 @@ PPanel frontend includes two independent applications:
 
 ## Tech Stack
 
-- **Runtime**: Bun (recommended) / Node.js 20+
+- **Runtime**: Bun (recommended) / Node.js 22.12+
 - **Build Tool**: Vite 6
 - **Framework**: React 19 + TypeScript
 - **Router**: TanStack Router
@@ -73,7 +73,7 @@ curl -fsSL https://bun.sh/install | bash
 bun --version
 ```
 
-Or use Node.js (requires 20+):
+Or use Node.js (requires 22.12+):
 
 ```bash
 # Check Node.js version
@@ -608,7 +608,7 @@ RewriteRule . /index.html [L]
 **Issue**: `bun run build` or `npm run build` fails
 
 **Solution**:
-1. Ensure Node.js version >= 20
+1. Ensure Node.js version >= 22.12
 2. Delete `node_modules` and lock file, reinstall
    ```bash
    rm -rf node_modules bun.lockb
