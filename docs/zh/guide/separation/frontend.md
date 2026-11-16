@@ -45,7 +45,7 @@ PPanel 前端包含两个独立应用：
 
 ## 技术栈
 
-- **运行时**: Bun (推荐) / Node.js 20+
+- **运行时**: Bun (推荐) / Node.js 22.12+
 - **构建工具**: Vite 6
 - **框架**: React 19 + TypeScript
 - **路由**: TanStack Router
@@ -73,7 +73,7 @@ curl -fsSL https://bun.sh/install | bash
 bun --version
 ```
 
-或使用 Node.js (需要 20+)：
+或使用 Node.js (需要 22.12+)：
 
 ```bash
 # 检查 Node.js 版本
@@ -608,7 +608,7 @@ RewriteRule . /index.html [L]
 **问题**: `bun run build` 或 `npm run build` 失败
 
 **解决方案**:
-1. 确保 Node.js 版本 >= 20
+1. 确保 Node.js 版本 >= 22.12
 2. 删除 `node_modules` 和锁文件，重新安装
    ```bash
    rm -rf node_modules bun.lockb
