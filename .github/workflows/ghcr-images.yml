@@ -104,8 +104,8 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: phenix3443
+          password: ${{ secrets.GHCR_PUBLISH_TOKEN }}
 
       - name: Extract Docker metadata
         id: meta
